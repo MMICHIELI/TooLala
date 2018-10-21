@@ -1,4 +1,4 @@
-package com.mservice.order;
+package com.mservice.orders;
 
 import org.junit.Test;
 import org.junit.runner.RunWith;

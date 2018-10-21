@@ -1,15 +1,10 @@
 
-DELETE FROM `user-ms-schema`.user;
-ALTER TABLE `user-ms-schema`.user AUTO_INCREMENT = 1;
+DELETE FROM ms_user;
 
-INSERT INTO `user-ms-schema`.user (FIRST_NAME, NAME)
-VALUES ('marc', 'michieli');
+INSERT INTO ms_user ("user_id", "first_name", "name") VALUES (nextval('msuserseq'), 'marc', 'michieli');
 
-INSERT INTO `user-ms-schema`.user (FIRST_NAME, NAME)
-VALUES ('justine', 'turczynski');
+INSERT INTO ms_user ("user_id", "first_name", "name") VALUES (nextval('msuserseq'), 'justine', 'turczynski');
 
-INSERT INTO `user-ms-schema`.user (FIRST_NAME, NAME)
-VALUES ('jean', 'dupont ');
+INSERT INTO ms_user ("user_id", "first_name", "name") VALUES (nextval('msuserseq'), 'jean', 'dupont ');
 
-INSERT INTO `user-ms-schema`.user (FIRST_NAME, NAME)
-VALUES ('raphael', 'poubelle');
+INSERT INTO ms_user ("user_id", "first_name", "name") VALUES (nextval('msuserseq'), 'raphael', 'poubelle');
